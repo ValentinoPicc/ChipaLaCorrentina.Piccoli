@@ -5,59 +5,76 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/estilo.css">
+	<script src="https://kit.fontawesome.com/dbd9440e71.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<title>Servicios</title>
 </head>
 <body>
 	<div class="imagenFondo4">
-		<div>	
-			<div>
-				<img class="logo" src="../img/Logo.jpg" alt="logo_principal" width="100" height="100">
-			</div>
-		</div>
 		<header>
-			<nav class="nav__container_li">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="servicios.html">Servicios</a></li>
-					<li><a href="ubicacion.html">Ubicacion</a></li>
-					<li><a href="producto.html">Productos</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+						<a class="navbar-brand"href="index.html"><img class="logo" src="../img/Logo.jpg" alt="logo_principal" width="100" height="100"></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active letra" aria-current="page" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link letra" href="servicios.html">Servicios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link letra" href="ubicacion.html" tabindex="-1" aria-disabled="true">Ubicacion</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link letra" href="producto.html">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link letra" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+							</li>
+							</ul>
+						</div>
+					</div>
+			  	</nav>
+			</div>
 		</header>
 		<section>
 			<h1>Horarios de venta</h1>
 			<section>
 				<article>
-					<table border="3" cellpadding="3" cellspacing="3">
+					<table borde="3" cellpadding="3" cellspacing="3" >
 						<tr>
-							<th>Tipo de chipá</th>
-							<th>Horarios</th>
-							<th>Días</th>
-							<th>Forma de entrega</th>
+							<th class="letra">Tipo de chipá</th>
+							<th class="letra">Horarios</th>
+							<th class="letra">Días</th>
+							<th class="letra">Forma de entrega</th>
 						</tr>
 						<tr>
-							<td>Horneados</td>
-							<td>15 a 19hs</td>
-							<td>Sábado,domingo y feriados</td>
-							<td>Take away o envío</td>
+							<td class="letra">Horneados</td>
+							<td class="letra">15 a 19hs</td>
+							<td class="letra">Sábado,domingo y feriados</td>
+							<td class="letra">Take away o envío</td>
 						</tr>
 						<tr>
-							<td>Congelados</td>
-							<td>12 a 22hs</td>
-							<td>Todos los días</td>
-							<td>Take away o envío</td>
+							<td class="letra">Congelados</td>
+							<td class="letra">12 a 22hs</td>
+							<td class="letra">Todos los días</td>
+							<td class="letra">Take away o envío</td>
 						</tr>
 					</table>
 				</article>
 			</section>
 		</section>
-		<h2>A continuacion te dejamos las intrucciones para los chipas congelados, espero te sean de ayuda!</h2>
 		<section>
+			<h2>A continuacion te dejamos las intrucciones para los chipas congelados, espero te sean de ayuda!</h2>
 			<div class="instruccion">
-			<h3>¿Como horneo mis chipacitos?</h3> <br>
+			<h3>¿Como horneo mis chipacitos?</h3>
 			</div>
-			<ol class="instruccion2">
+			<ol class="instruccion2 ">
 				<li>Precalentar el horno a temperatura maxima durante 10-15 minutos</li>
 				<li>Colocar los chipá en una bandeja con una pequeña capa de aceite en ella</li>
 				<li>Hornear durante 10-12 minutos, hasta que tengan pequitas de queso o estén dorados</li>
@@ -68,9 +85,9 @@
 			<div>
 				<h3><img class="copyright" src="../img/copyright-button.jpg" height="30px" width="30px" alt="_copyright"></h3>
 				<h3>Contacto</h3>
-				<h3>+54 9 342 406 4636</h3>
-				<h3><a href="https://www.instagram.com/chipalacorrentinasf_/?hl=es">Instagram</a></h3>
-				<h3><a href="https://www.facebook.com/lacorrentinasf/">Facebook</a></h3>
+				<h3><i class="fa-brands fa-square-whatsapp"></i></h3>
+				<h3><a  href="https://www.instagram.com/chipalacorrentinasf_/?hl=es"><i class="fa-brands fa-instagram"></i></a></h3>
+				<h3><a href="https://www.facebook.com/lacorrentinasf/"><i class="fa-brands fa-square-facebook"></i></a></h3>
 			</div>
 		</footer>
 	</div>
