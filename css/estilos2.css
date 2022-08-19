@@ -1,0 +1,220 @@
+* {
+  font-family: 'Gill Sans', sans-serif;
+  color: #edfafa;
+  text-align: center;
+  font-size: small; }
+
+li {
+  color: #483d4b;
+  background-color: #FFDAB9;
+  color: black;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10%;
+  padding: 10px;
+  justify-content: space-between; }
+
+.letra {
+  font-size: medium; }
+
+.salmon {
+  background-color: #FFDAB9; }
+
+#product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.container {
+  margin: 50px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; }
+
+.imagenFondo {
+  background-image: url(../img/Chipa.jpeg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 0.12fr 0.12fr 1fr 0.12fr; }
+
+.imagenFondo2 {
+  background-image: url(../img/Chipa.jpeg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 0.12fr 0.12fr 1.5fr 0.12fr; }
+
+.imagenFondo3 {
+  background-image: url(../img/Chipa.jpeg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 0.12fr 0.12fr 0.12 1fr 0.12fr; }
+
+.imagenFondo4 {
+  background-image: url(../img/Chipa.jpeg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 0.12fr 0.12fr 1fr 0.12fr; }
+
+.imagenFondo5 {
+  background-image: url(../img/Chipa.jpeg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 0.12fr 0.12fr 1fr 0.12fr; }
+
+.divIndex1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; }
+
+.grid1 {
+  margin: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.contPadreUbic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+div img, video {
+  border-radius: 20px; }
+
+a {
+  text-decoration: none; }
+
+section img {
+  margin: 10px; }
+
+section video {
+  margin: 10px; }
+
+footer div h3 {
+  display: inline-block;
+  padding: 10px;
+  margin: 70px;
+  border-radius: 10px; }
+
+.enviar {
+  background-color: #FFDAB9;
+  margin-left: 30%;
+  margin-right: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10%;
+  padding: 10px; }
+
+.contact {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+input {
+  color: black; }
+
+table {
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: #FFDAB9;
+  border: 3px;
+  border-radius: 10px; }
+  table th {
+    color: #483d4b; }
+
+td {
+  color: #483d4b; }
+
+.instruccion {
+  background-color: #FFDAB9;
+  padding: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 20px;
+  border-radius: 10px; }
+
+.instruccion2 {
+  color: #797979;
+  background-color: #FFDAB9;
+  padding: 1px;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  img {
+    height: 250px;
+    width: 150px; }
+  video {
+    height: 250px;
+    width: 150; }
+  .logo {
+    width: 75px;
+    height: 75px; }
+  * {
+    font-size: medium; }
+  .copyright {
+    height: 15px;
+    width: 15px; }
+  iframe {
+    width: 300px;
+    height: 225px; } }
+
+h1 {
+  transition: all 3s; }
+  h1:hover {
+    padding: 30px;
+    margin-left: 42%;
+    margin-right: 42%;
+    border-radius: 10px;
+    background-color: #FFDAB9; }
+
+h2 {
+  transition: all 3s; }
+  h2:hover {
+    padding: 30px;
+    background-color: #FFDAB9;
+    border-radius: 10px; }
+
+video {
+  transition: 3s; }
+  video:hover {
+    width: 325px;
+    height: 425px; }
+
+img {
+  transition: 2s; }
+  img:hover {
+    width: 325px;
+    height: 425px; }
+
+.logo {
+  margin: 10px;
+  width: 100px;
+  height: 100px; }
+  .logo:hover {
+    width: 75px;
+    height: 75px; }
+
+.copyright {
+  height: 30px;
+  width: 30px; }
+  .copyright:hover {
+    width: 30px;
+    height: 30px; }
