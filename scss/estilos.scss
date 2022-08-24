@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 
 *{
     font-family: 'Gill Sans', sans-serif;
@@ -12,12 +13,12 @@ li {
     color: rgb(72, 61, 75);
     background-color:$color-salmon ;
     color: black;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: map-get($sizes, 70);
+    margin-right: map-get($sizes, 10);
     display: inline-block;
     text-align: center;
     border-radius: 10%;
-    padding: 10px;
+    padding: map-get($sizes, 10);
     justify-content: space-between;
    
 }
@@ -32,13 +33,11 @@ li {
 }
 
 #product{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
 }
 
 .container{
-    margin: 50px;
+    margin: map-get($sizes, 50);
 }
 
 
@@ -95,29 +94,23 @@ body{
 
 
 .divIndex1{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-
+    @include flex-row-rev-center;
 }
 
 .grid1{
-    margin: 10px;
-    border-radius: 10px;
+    margin: map-get($sizes, 10);
+    border-radius: map-get($sizes, 10);
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
 
 .contPadreUbic{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+    @include flex-row-center;
 }
 
 div img,video{
-    border-radius: 20px;
+    border-radius: map-get($sizes, 20);
 }
 
 a{
@@ -127,35 +120,37 @@ a{
 
 section{
     img{
-        margin: 10px;
+        margin: map-get($sizes, 10);
     }
     video{
-        margin: 10px;
+        @extend img ;
     }
 }
 
 footer div h3{
     display: inline-block;
-    padding: 10px;
-    margin: 70px;
-    border-radius: 10px;
+    padding: map-get($sizes, 10);
+    margin: map-get($sizes, 70);
+    border-radius: map-get($sizes, 10);
 
+}
+
+i{
+    font-size: 30px;
 }
 
 .enviar {
     background-color:$color-salmon ;
     margin-left: 30%;
     margin-right: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex-row-center;
     border-radius: 10%;
-    padding: 10px;
+    padding: map-get($sizes, 10);
 }
 
 .contact{
-    margin-top:50px;
-    margin-bottom: 50px;
+    margin-top:map-get($sizes, 50);
+    margin-bottom: map-get($sizes, 50);
 }
 
 input{
@@ -168,7 +163,7 @@ table{
     margin-right: 40%;
     background-color:$color-salmon ;
     border: 3px;
-    border-radius: 10px;    
+    border-radius: map-get($sizes, 10);    
         th{
             color: rgb(72, 61, 75);
         }
@@ -180,11 +175,11 @@ td{
 
 .instruccion{
     background-color: $color-salmon;
-    padding: 10px;
+    padding: map-get($sizes, 10);
     margin-left: 35%;
     margin-right: 35%;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: map-get($sizes, 20);
+    border-radius: map-get($sizes, 10);
 }
 
 .instruccion2{
@@ -193,7 +188,7 @@ td{
     padding: 1px;
     margin-left: 35%;
     margin-right: 35%;
-    border-radius: 10px;
+    border-radius: map-get($sizes, 10);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -238,7 +233,7 @@ h1{
         padding: 30px;
         margin-left: 42%;
         margin-right: 42%;
-        border-radius: 10px;
+        border-radius: map-get($sizes, 10);
         background-color: $color-salmon; 
     }
 }
@@ -248,7 +243,7 @@ h2{
     &:hover{
         padding: 30px;
         background-color: $color-salmon;
-        border-radius: 10px;
+        border-radius: map-get($sizes, 10);
     }
 }
 
@@ -269,7 +264,7 @@ img{
 }
 
 .logo{
-    margin: 10px;
+    margin: map-get($sizes, 10);
     width: 100px;
     height: 100px;
     &:hover{
