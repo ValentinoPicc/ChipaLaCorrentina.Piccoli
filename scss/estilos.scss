@@ -9,18 +9,22 @@
 
 }
 
+
 li {
     color: rgb(72, 61, 75);
     background-color:$color-salmon ;
     color: black;
     margin-left: map-get($sizes, 70);
-    margin-right: map-get($sizes, 10);
+    margin-right: map-get($sizes, 70);
     display: inline-block;
     text-align: center;
     border-radius: 10%;
     padding: map-get($sizes, 10);
     justify-content: space-between;
    
+}
+
+.comment{margin-top: 20px;
 }
 
 .letra{
@@ -34,6 +38,7 @@ li {
 
 #product{
     @include flex-column-center;
+    margin-right: 30px;
 }
 
 .container{
@@ -161,6 +166,7 @@ input{
 table{
     margin-left: 40%;
     margin-right: 40%;
+    justify-content: center;
     background-color:$color-salmon ;
     border: 3px;
     border-radius: map-get($sizes, 10);    
@@ -196,13 +202,19 @@ td{
 
 @media screen and (max-width: 768px)   {
     img{
-        height: 250px;
-        width: 150px;
+        height: 225px;
+        width: 150px;    
     }
-    
+
+    .enviar{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
     video{
-        height: 250px;
-        width: 150;
+        height: 225px;
+        width: 150px;
     }
 
     .logo{
@@ -214,7 +226,6 @@ td{
         font-size: medium;
     }
 
-
     .copyright{
         height: 15px;
         width: 15px;
@@ -225,14 +236,33 @@ td{
         height: 225px;
     }
 
+    h1{
+
+        &:hover{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    }
+
+    table{
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .instruccion2{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
 }
 
 h1{
     transition: all 3s;
     &:hover{
         padding: 30px;
-        margin-left: 42%;
-        margin-right: 42%;
+        margin-left: 35%;
+        margin-right: 35%;
         border-radius: map-get($sizes, 10);
         background-color: $color-salmon; 
     }
@@ -242,6 +272,8 @@ h2{
     transition: all 3s;
     &:hover{
         padding: 30px;
+        margin-left: 15%;
+        margin-right: 15%;
         background-color: $color-salmon;
         border-radius: map-get($sizes, 10);
     }
