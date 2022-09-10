@@ -22,9 +22,6 @@ li {
 .letra {
   font-size: medium; }
 
-.salmon {
-  background-color: #FFDAB9; }
-
 #product {
   display: flex;
   flex-direction: column;
@@ -198,8 +195,8 @@ h1 {
   transition: all 3s; }
   h1:hover {
     padding: 30px;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 20%;
+    margin-right: 20%;
     border-radius: 10px;
     background-color: #FFDAB9; }
 
@@ -212,22 +209,28 @@ h2 {
     background-color: #FFDAB9;
     border-radius: 10px; }
 
-video {
-  transition: 3s; }
-  video:hover {
-    width: 325px;
-    height: 425px; }
+/*
+video{
+    transition: 3s;
+    &:hover{
+        width: 325px;
+        height: 425px;
+    }
+}
 
-img, section video {
-  transition: 2s; }
-  img:hover, section video:hover {
-    width: 325px;
-    height: 425px; }
-
+img{
+    transition: 2s;
+    &:hover{
+        width: 50%;
+        height: 55%;
+    }
+}
+*/
 .logo {
   margin: 10px;
   width: 100px;
-  height: 100px; }
+  height: 100px;
+  transition: 3s; }
   .logo:hover {
     width: 75px;
     height: 75px; }

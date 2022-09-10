@@ -31,11 +31,6 @@ li {
     font-size: medium;
 }
 
-
-.salmon{
-    background-color: $color-salmon;
-}
-
 #product{
     @include flex-column-center;
     margin-right: 30px;
@@ -203,7 +198,8 @@ td{
 @media screen and (max-width: 768px)   {
     img{
         height: 225px;
-        width: 150px;    
+        width: 150px;
+
     }
 
     .enviar{
@@ -215,6 +211,7 @@ td{
     video{
         height: 225px;
         width: 150px;
+
     }
 
     .logo{
@@ -261,8 +258,8 @@ h1{
     transition: all 3s;
     &:hover{
         padding: 30px;
-        margin-left: 35%;
-        margin-right: 35%;
+        margin-left: 20%;
+        margin-right: 20%;
         border-radius: map-get($sizes, 10);
         background-color: $color-salmon; 
     }
@@ -278,7 +275,7 @@ h2{
         border-radius: map-get($sizes, 10);
     }
 }
-
+/*
 video{
     transition: 3s;
     &:hover{
@@ -290,20 +287,23 @@ video{
 img{
     transition: 2s;
     &:hover{
-        width: 325px;
-        height: 425px;
+        width: 50%;
+        height: 55%;
     }
 }
+*/
 
 .logo{
     margin: map-get($sizes, 10);
     width: 100px;
     height: 100px;
+    transition: 3s;
     &:hover{
         width: 75px;
         height: 75px;
     }
 }
+
 
 
 .copyright{
