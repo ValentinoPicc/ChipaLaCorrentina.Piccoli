@@ -139,6 +139,10 @@ i{
     font-size: 30px;
 }
 
+.ubicacion{
+    @include flex-row-center;
+}
+
 .enviar {
     background-color:$color-salmon ;
     margin-left: 30%;
