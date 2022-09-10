@@ -110,11 +110,6 @@ footer div h3 {
 i {
   font-size: 30px; }
 
-.ubicacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 .enviar {
   background-color: #FFDAB9;
   margin-left: 30%;
